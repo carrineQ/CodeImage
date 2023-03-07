@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1159</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGraphicsView" name="leftgraphicsView"/>
+        </item>
+        <item>
+         <widget class="QGraphicsView" name="rightgraphicsView"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1159</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="doOpen"/>
+    <addaction name="doSave"/>
+    <addaction name="doSaveAs"/>
+    <addaction name="doRestore"/>
+    <addaction name="separator"/>
+    <addaction name="doExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>图像处理</string>
+    </property>
+    <addaction name="doLaplace"/>
+    <addaction name="separator"/>
+    <addaction name="doSimple"/>
+    <addaction name="separator"/>
+    <addaction name="Binaryzation"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>色调变化</string>
+    </property>
+    <addaction name="doCool"/>
+    <addaction name="separator"/>
+    <addaction name="doWarm"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="file">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="handle">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="hue">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="doOpen">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/open.png</normaloff>:/icon/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="doSave">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/save.png</normaloff>:/icon/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="doSaveAs">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/saveAs.png</normaloff>:/icon/saveAs.png</iconset>
+   </property>
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="doExit">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/close.png</normaloff>:/icon/close.png</iconset>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="doSimple">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/simpleSmooth.png</normaloff>:/icon/simpleSmooth.png</iconset>
+   </property>
+   <property name="text">
+    <string>简单平滑</string>
+   </property>
+  </action>
+  <action name="doLaplace">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/laplace.png</normaloff>:/icon/laplace.png</iconset>
+   </property>
+   <property name="text">
+    <string>拉普拉斯锐化</string>
+   </property>
+  </action>
+  <action name="doRestore">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/restore.png</normaloff>:/icon/restore.png</iconset>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="Binaryzation">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/binary.png</normaloff>:/icon/binary.png</iconset>
+   </property>
+   <property name="text">
+    <string>二值化</string>
+   </property>
+  </action>
+  <action name="doCool">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/cool.png</normaloff>:/icon/cool.png</iconset>
+   </property>
+   <property name="text">
+    <string>冷色调</string>
+   </property>
+   <property name="iconText">
+    <string>冷色调</string>
+   </property>
+  </action>
+  <action name="doWarm">
+   <property name="icon">
+    <iconset resource="res/sources.qrc">
+     <normaloff>:/icon/warm.png</normaloff>:/icon/warm.png</iconset>
+   </property>
+   <property name="text">
+    <string>暖色调</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res/sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

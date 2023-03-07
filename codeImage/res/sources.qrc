@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>save.png</file>
+        <file>open.png</file>
+        <file>close.png</file>
+        <file>restore.png</file>
+        <file>warm.png</file>
+        <file>cool.png</file>
+        <file>saveAs.png</file>
+        <file>simpleSmooth.png</file>
+        <file>laplace.png</file>
+        <file>binary.png</file>
+    </qresource>
+</RCC>
